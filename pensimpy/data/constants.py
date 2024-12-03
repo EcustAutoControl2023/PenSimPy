@@ -13,7 +13,7 @@ PAA = "Fpaa"
 
 DEFAULT_PENICILLIN_RECIPE_ORDER = [FS, FOIL, FG, PRES, DISCHARGE, WATER, PAA]
 
-FS_DEFAULT_PROFILE = [
+FS_DEFAULT_PROFILE: list[dict[str, float]] = [
     {"time": 3, "value": 8},
     {"time": 12, "value": 15},
     {"time": 16, "value": 30},
@@ -34,10 +34,10 @@ FS_DEFAULT_PROFILE = [
     {"time": 76, "value": 90},
     {"time": 80, "value": 116},
     {"time": 160, "value": 90},
-    {"time": 230, "value": 80}
+    {"time": 230, "value": 80},
 ]
 
-FOIL_DEFAULT_PROFILE = [
+FOIL_DEFAULT_PROFILE: list[dict[str, float]] = [
     {"time": 4, "value": 22},
     {"time": 16, "value": 30},
     {"time": 56, "value": 35},
@@ -50,16 +50,16 @@ FOIL_DEFAULT_PROFILE = [
     {"time": 230, "value": 23},
 ]
 
-FG_DEFAULT_PROFILE = [
+FG_DEFAULT_PROFILE: list[dict[str, float]] = [
     {"time": 8, "value": 30},
     {"time": 20, "value": 42},
     {"time": 40, "value": 55},
     {"time": 90, "value": 60},
     {"time": 200, "value": 75},
-    {"time": 230, "value": 65}
+    {"time": 230, "value": 65},
 ]
 
-PRESS_DEFAULT_PROFILE = [
+PRESS_DEFAULT_PROFILE: list[dict[str, float]] = [
     {"time": 12.4, "value": 0.6},
     {"time": 25, "value": 0.7},
     {"time": 30, "value": 0.8},
@@ -70,7 +70,7 @@ PRESS_DEFAULT_PROFILE = [
     {"time": 230, "value": 0.9},
 ]
 
-DISCHARGE_DEFAULT_PROFILE = [
+DISCHARGE_DEFAULT_PROFILE: list[dict[str, float]] = [
     {"time": 100, "value": 0},
     {"time": 102, "value": 4000},
     {"time": 130, "value": 0},
@@ -83,22 +83,22 @@ DISCHARGE_DEFAULT_PROFILE = [
     {"time": 192, "value": 4000},
     {"time": 210, "value": 0},
     {"time": 212, "value": 4000},
-    {"time": 230, "value": 0}
+    {"time": 230, "value": 0},
 ]
 
-WATER_DEFAULT_PROFILE = [
+WATER_DEFAULT_PROFILE: list[dict[str, float]] = [
     {"time": 50, "value": 0},
     {"time": 75, "value": 500},
     {"time": 150, "value": 100},
     {"time": 160, "value": 0},
     {"time": 170, "value": 400},
     {"time": 200, "value": 150},
-    {"time": 230, "value": 250}
+    {"time": 230, "value": 250},
 ]
 
-PAA_DEFAULT_PROFILE = [
+PAA_DEFAULT_PROFILE: list[dict[str, float]] = [
     {"time": 5, "value": 5},
     {"time": 40, "value": 0},
     {"time": 200, "value": 10},
-    {"time": 230, "value": 4}
+    {"time": 230, "value": 4},
 ]
